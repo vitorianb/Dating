@@ -1,3 +1,14 @@
+function personagem() {
+    while (true) {
+        let questao = prompt("1- Vanessa. | 2- Kylie. | 3- Ariane.")
+        if (questao == 1 || questao == 2 || questao == 3) {
+            return escolha1()
+        } else {
+            alert("Escreva novamente uma resposta válida.")
+        }
+    }
+}
+
 function escolha1() {
     while (true) {
         let numero = prompt("1- Elogie sua aparência. | 2- Diga algo inteligente. | 3- Dê a ela um abraço. | 4- Diga algo engraçado.")
@@ -129,6 +140,7 @@ function escolha3_1() {
         questao3_1 = prompt("1- Eu preciso usar o banheiro. | 2- Vamos para o quarto. | 3- Vamos para a cozinha. | 4- Vamos para a sala de estar. | 5- Vamos ver o quintal.")
         if (questao3_1 == 1) {
             alert("*END* Me desculpa, mudei de ideia. Lets call it a nigth. The end.")
+            document.write(`<img src="https://www.datingariane.com/images/goodbye1.jpg"`)
             break
         } else if (questao3_1 == 2) {
             alert("*END* Desculpe, mas o quarto esta fora de limite. The end.")
@@ -246,25 +258,25 @@ function escolha4(cozinha) {
 
 function escolha4_2(conversa) {
     while (true) {
-        let arrEscolhas = ['escolha 1', 'escolha 2', 'escolha 3', 'escolha 4'];
+        let arrEscolhas = ['1- Fale com ela.', '2- Elogie ela.', '3- Beba vinho', '4- Coma o bife.'];
         let questao4_2;
         if (conversa) {
-            questao4_2 = prompt("1- Fale com ela. | 2- Elogie ela. | 3- Beba vinho. | 4- Coma o bife.")
+            questao4_2 = prompt(arrEscolhas.join(' | '))
         } else {
-            arrEscolhas.split(+conversa - 1, 0)
-            questao4_2 = prompt(arrEscolhas.join('|'))
+            arrEscolhas.splice(+conversa - 1, 0)
+            questao4_2 = prompt(arrEscolhas.join(' | '))
         }
         if (questao4_2 == 1) {
             alert("Muito obrigada pelo jantar. Estou sentindo um clima romântico agora.")
             return escolha5()
         } else if (questao4_2 == 2) {
-            return questao4_2_2()
+            return escolha4_2_2()
         } else if (questao4_2 == 3) {
             alert("~bebendo vinho")
-            return questao4_2(questao4_2)
+            return escolha4_2(questao4_2)
         } else if (questao4_2 == 4) {
             alert("~comendo o bife")
-            return questao4_2(questao4_2)
+            return escolha4_2(questao4_2)
         } else {
             alert("Escreva novamente uma resposta válida.")
         }
@@ -277,16 +289,16 @@ function escolha4_2_2() {
         questao4_2_2 = prompt("1- Ótimas habilidades de churrasco você as aprendeu trabalhando em fast food? | 2- Eu gosto das paredes vermelhas da sua casa. Interessante escolha. | 3- Você é linda, alguma vez ja considerou ser modelo? | 4- Você é tao linda, não consigo tirar meus olhos de você. ")
         if (questao4_2_2 == 1) {
             alert("Não, apenas instinto. Fogo e carne, até um homem das cavernas poderia fazê-lo.")
-            return escolha4_2(questao4_2)
+            return escolha4_2()
         } else if (questao4_2_2 == 2) {
             alert("Paredes brancas são tão chatas, eu prefiro um pouco de cor.")
-            return escolha4_2(questao4_2)
+            return escolha4_2()
         } else if (questao4_2_2 == 3) {
             alert("Você está falando sério? Eu não sou modelo, mas não me importaria de tirar as minhas roupas.")
-            return escolha4_2(questao4_2)
+            return escolha4_2()
         } else if (questao4_2_2 == 4) {
             alert("Sim, eu notei. Isso está ficando um pouco estranho")
-            return escolha4_2(questao4_2)
+            return escolha4_2()
         } else {
             alert("Escreva novamente uma resposta válida.")
         }
@@ -322,7 +334,7 @@ function escolha5_1() {
         let questao5_1;
         questao5_1 = prompt("1- Espere por ela no corredor. | 2- Siga ela até dentro do banheiro.")
         if (questao5_1 == 1) {
-            return questao5_1_1()
+            return escolha5_1_1()
         } else if (questao5_1 == 2) {
             alert("Me desculpa, mudei de ideia. Lets call it a nigth. THE END.")
             break
@@ -341,7 +353,7 @@ function escolha5_2() {
             break
         } else if (questao5_2 == 2) {
             alert("Você gostou do meu biquini? Vamos para o quintal.")
-            return questao5_2_2()
+            return escolha_2_2()
         } else {
             alert("Escreva novamente uma resposta válida.")
         }
@@ -370,12 +382,12 @@ function escolha5_2_2() {
         if (questao5_2_2 == 1) {
             alert("~bebendo vinho~")
             alert("Ok, estou de traje de banho aqui. O que devemos fazer agora?")
-            return questao5_2_2()
+            return escolha5_2_2()
         } else if (questao5_2_2 == 2) {
             return escolha5()
         } else if (questao5_2_2 == 3) {
             alert("É um bom exercício, mas nadar mt me deixa cansada.")
-            return questao5_2_2_3()
+            return escolha5_2_2_3()
         } else {
             alert("Escreva novamente uma resposta válida.")
         }
@@ -391,7 +403,7 @@ function escolha5_2_2_3() {
             break
         } else if (questao5_2_2_3 == 2) {
             alert("O que devemos fazer? Se eu nadar um pouco mais posso ficar com cãibra.")
-            return questao5_2_2_3_2()
+            return escolha5_2_2_3_2()
         } else {
             alert("Escreva novamente uma resposta válida.")
         }
@@ -409,7 +421,7 @@ function escolha5_2_2_3_2() {
             alert("Nosso mergulho foi mt curto. Talvez possamos tentar novamente mais tarde.")
             return escolha6()
         } else if (questao5_2_2_3_2 == 3) {
-            return questao5_2_2_3_2_3()
+            return escolha5_2_2_3_2_3()
         } else {
             alert("Escreva novamente uma resposta válida.")
         }
@@ -468,7 +480,7 @@ function escolha7() {
         } else if (questao7 == 4) {
             return escolha3()
         } else if (questao7 == 5) {
-            return questao5_2_2()
+            return escolha5_2_2()
         } else {
             alert("Escreva novamente uma resposta válida.")
         }
@@ -481,10 +493,10 @@ function escolha8() {
         questao8 = prompt("1- Pegue bife para o jantar. | 2- Pegue um vinho para beber. | 3- Vá para outro lugar.")
         var escolha;
         if (questao7 == 1) {
-            return questao4()
+            return escolha4()
         } else if (questao7 == 2) {
             alert("Este vinho é uma boa safra.")
-            return questao3_1_3()
+            return escolha3_1_3()
         } else if (questao7 == 3) {
             return escolha7()
         } else {
