@@ -1,13 +1,13 @@
 header h1 {
     text-transform: uppercase;
-    color:rgba(255, 0, 0, 0.53);
+    color:rgba(255, 0, 0, 0.734);
     text-align: center;
     margin: 2% 0% 1%;
     font-size: 50px;
     font-weight: bold;
 }
 
-header h2 {
+header h2, h3 {
     margin: 0 5%;
     color: white;
     font-size: 20px;
@@ -15,6 +15,9 @@ header h2 {
     margin:0 20% 1%;
 }
 
+h2 b{
+    color: rgba(255, 0, 0, 0.734);
+}
 header h3 {
     color: white;
     font-size: 17px;
@@ -35,12 +38,13 @@ main {
 }
 
 button {
-    font-size: 22px;
+    font-size: 20px;
     background-image: -webkit-linear-gradient(top, #D01E1E, #29333F);
     border-radius: 20px;
     color: #FFFFFF;
-    padding: 50x;
-    width: 10%;
+    padding: auto;
+    margin: auto;
+    width: 7%;
     box-shadow: 1px 1px 20px 0 #000000;
     display: inline-block;
     cursor: pointer;
@@ -69,39 +73,31 @@ footer {
 }
 
 @media (max-width: 700px) {
-    .cabeçalho_principal {
-        font-size: 40px;
-        flex-direction: column;
-        text-align: center;
-    }
-    h1, h2, h3 {
-        display: none;
-    }
-    .menu_principal {
-        flex-direction: column;
-        justify-content: start;
-        width: 98%;
-        padding: 0%;
-        margin: auto;
-        padding:0.6%; 
-    }
-    li {
-        border: 1.5px solid violet;
-        padding: 2%;
-    }
-    li:hover {
-        transform: scale(1.05);
-    }
-    .imagens_finas, .imagens_largas {
+    header {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        margin-top: 2%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    button {
+        margin:3% 0;
+        width: 15%;
+    }
+    .personagens {
+        display: flex;
+        flex-direction: column;
         height: 90%;
-        margin: 4%;
-        padding: 0%;
+        margin-top: 2%;
     }
-    .container_linha_final {
+    img {
+         margin: 5% 1%  
+    }
+    footer {
         display: flex;
         flex-direction: column;
+        margin-top: 5%;
     }
 }
