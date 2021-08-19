@@ -21,7 +21,7 @@ h2, h3 {
 }
 
 h2 b{
-    color: rgba(109, 36, 129, 0.734);
+    color: rgba(161, 40, 194, 0.734);
 }
 h3 {
     font-size: 13px;
@@ -87,7 +87,7 @@ footer {
     }
     button {
         margin:3% 0;
-        width: 15%;
+        width: 25%;
     }
     .personagens {
         display: flex;
@@ -96,10 +96,13 @@ footer {
         margin-top: 2%;
     }
     img {
-        margin: 5% 0%;
         height:30%;
         padding: 3%
     }
+    #kylie {
+        margin-left: 2%;
+    }
+
     footer {
         display: flex;
         flex-direction: column;
