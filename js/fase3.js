@@ -29,7 +29,7 @@ function escolha5_1() {
         if (questao5_1 == 1) {
             return escolha5_1_1()
         } else if (questao5_1 == 2) {
-            alert("Me desculpa, mudei de ideia. Lets call it a nigth. THE END.")
+            alert("Me desculpe, mudei de ideia. Vamos terminar a noite por aqui. THE END")
             break
         } else {
             alert("Escreva novamente uma resposta válida.")
@@ -42,7 +42,7 @@ function escolha5_2() {
         let questao5_2;
         questao5_2 = prompt("1- Siga ela até dentro do quarto. | 2- Espere por ela no corredor.")
         if (questao5_2 == 1) {
-            alert("Me desculpa, mudei de ideia. Lets call it a nigth. THE END.")
+            alert("Me desculpe, mudei de ideia. Vamos terminar a noite por aqui. THE END")
             break
         } else if (questao5_2 == 2) {
             alert("Você gostou do meu biquini? Vamos para o quintal.")
@@ -92,7 +92,7 @@ function escolha5_2_2_3() {
         let questao5_2_2_3;
         questao5_2_2_3 = prompt("1- Tente tirar a parte de cima do biquini dela. | 2- Nade um pouco mais.")
         if (questao5_2_2_3 == 1) {
-            alert("Me desculpa, mudei de ideia. Lets call it a nigth. THE END.")
+            alert("Me desculpe, mudei de ideia. Vamos terminar a noite por aqui. THE END")
             break
         } else if (questao5_2_2_3 == 2) {
             alert("O que devemos fazer? Se eu nadar um pouco mais posso ficar com cãibra.")
@@ -108,7 +108,7 @@ function escolha5_2_2_3_2() {
         let questao5_2_2_3_2;
         questao5_2_2_3_2 = prompt("1- Mergulhar nua. | 2- Vamos sair da piscina. | 3- Nadar um pouco mais.")
         if (questao5_2_2_3_2 == 1) {
-            alert("Me desculpa, mudei de ideia. Lets call it a nigth. THE END.")
+            alert("Me desculpe, mudei de ideia. Vamos terminar a noite por aqui. THE END")
             break
         } else if (questao5_2_2_3_2 == 2) {
             alert("Nosso mergulho foi mt curto. Talvez possamos tentar novamente mais tarde.")
@@ -126,7 +126,7 @@ function escolha5_2_2_3_2_3() {
         let questao5_2_2_3_2_3;
         questao5_2_2_3_2_3 = prompt("1-Tente tirar o biquini dela. | 2- Nadar embaixo d'agua.")
         if (questao5_2_2_3_2_3 == 1) {
-            alert("Me desculpa, mudei de ideia. Lets call it a nigth. THE END.")
+            alert("Me desculpe, mudei de ideia. Vamos terminar a noite por aqui. THE END")
             break
         } else if (questao5_2_2_3_2_3 == 2) {
             alert("~segurando a respiração~")
@@ -148,10 +148,10 @@ function escolha6() {
         } else if (questao6 == 2) {
             return escolha7()
         } else if (questao6 == 3) {
-            alert("Me desculpa, mudei de ideia. Lets call it a nigth. THE END.")
+            alert("Me desculpe, mudei de ideia. Vamos terminar a noite por aqui. THE END")
             break
         } else if (questao6 == 4) {
-            alert("Me desculpa, mudei de ideia. Lets call it a nigth. THE END.")
+            alert("Me desculpe, mudei de ideia. Vamos terminar a noite por aqui. THE END")
             break
         } else {
             alert("Escreva novamente uma resposta válida.")
@@ -184,7 +184,6 @@ function escolha8() {
     while (true) {
         let questao8;
         questao8 = prompt("1- Pegue bife para o jantar. | 2- Pegue um vinho para beber. | 3- Vá para outro lugar.")
-        var escolha;
         if (questao8 == 1) {
             return escolha4()
         } else if (questao8 == 2) {

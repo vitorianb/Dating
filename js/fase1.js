@@ -120,10 +120,10 @@ function escolha3() {
         if (questao3 == 1) {
             return escolha3_1()
         } else if (questao3 == 2) {
-            alert("THE END. Seu beijo é ótimo! Mas todo esse carinho está me deixando cansada. Então eu vou te dar um beijo de boa noite.")
+            alert("Seu beijo é ótimo! Mas todo esse carinho está me deixando cansada. Então eu vou te dar um beijo de boa noite e terminamos por aqui. THE END")
             break
         } else if (questao3 == 3) {
-            alert("THE END. Seu beijo é ótimo! Mas todo esse carinho está me deixando cansada. Então eu vou te dar um beijo de boa noite.")
+            alert("Seu beijo é ótimo! Mas todo esse carinho está me deixando cansada. Então eu vou te dar um beijo de boa noite e terminamos por aqui. THE END")
             break
         } else if (questao3 == 4) {
             alert("Essa foi boa, você está me deixando com um clima romântico.")
@@ -139,11 +139,11 @@ function escolha3_1() {
         let questao3_1;
         questao3_1 = prompt("1- Eu preciso usar o banheiro. | 2- Vamos para o quarto. | 3- Vamos para a cozinha. | 4- Vamos para a sala de estar. | 5- Vamos ver o quintal.")
         if (questao3_1 == 1) {
-            alert("*END* Me desculpa, mudei de ideia. Lets call it a nigth. The end.")
+            alert("Me desculpa, mudei de ideia. Vamos terminar a noite por aqui. THE END")
             document.write(`<img src="https://www.datingariane.com/images/goodbye1.jpg"`)
             break
         } else if (questao3_1 == 2) {
-            alert("*END* Desculpe, mas o quarto esta fora de limite. The end.")
+            alert("Me desculpa, mudei de ideia. Vamos terminar a noite por aqui. THE END")
             break
         } else if (questao3_1 == 3) {
             return escolha3_1_3()
@@ -185,7 +185,7 @@ function escolha3_4_4() {
         let questao3_4_4;
         questao3_4_4 = prompt("1- Siga ela até o banheiro. | 2- Espere por ela no corredor.")
         if (numero == 1 || numero == 2) {
-            alert("Me desculpe, mudei de ideia. Vamos terminar a noite por aqui. THE END.")
+            alert("Me desculpa, mudei de ideia. Vamos terminar a noite por aqui. THE END")
             break
         } else {
             alert("Escreva novamente uma resposta válida.")
