@@ -1,3 +1,0 @@
-1-Como faço pra relacionar questões que estao dentro de uma função com outra função? questao2_1/questao2_2
-2-Consigo aplicar validação de input nas funções de escolha?
-3-Ordem de aparecimento dos objetos 
