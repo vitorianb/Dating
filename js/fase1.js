@@ -1,6 +1,6 @@
 function personagem() {
     while (true) {
-        let questao = prompt("1- Vanessa. | 2- Kylie. | 3- Ariane.")
+        let questao = prompt("1- Ariane. | 2- Kylie. | 3- Anitta.")
         if (questao == 1 || questao == 2 || questao == 3) {
             return escolha1()
         } else {
