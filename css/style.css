@@ -1,3 +1,8 @@
+.body {
+    background: black;
+    font-family: 'Work Sans', sans-serif;   
+}
+
 header h1 {
     text-transform: uppercase;
     color:rgba(255, 0, 0, 0.734);
@@ -5,19 +10,6 @@ header h1 {
     margin: 2% 0% 1%;
     font-size: 50px;
     font-weight: bold;
-}
-
-.theend {
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 700px;
-    font-size: 500px;
-    text-align: center;
-    margin-bottom: 10%;
-}
-
-.titulo_saladeestar {
-    font-size: 50pxs;
 }
 
 header h2, h3 {
@@ -37,17 +29,11 @@ header h3 {
     text-align: center;
 }
 
-body {
-    background: black;
-    font-family: 'Work Sans', sans-serif;   
-}
-
 main {
     display: flex;
     flex-direction: column;
     padding: 1%;
     align-items: center;
-    
 }
 
 button {
@@ -74,7 +60,7 @@ button:hover {
     justify-content: center;
 }
 
-img {
+.personagens img {
     margin: 2% 2%;
     width: 300px;
     height: 400px;
