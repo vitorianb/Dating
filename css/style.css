@@ -1,32 +1,31 @@
-.body {
-    background: black;
-    font-family: 'Work Sans', sans-serif;   
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: black;
 }
 
-header h1 {
+h1 {
     text-transform: uppercase;
-    color:rgba(255, 0, 0, 0.734);
+    color: blueviolet;
     text-align: center;
     margin: 2% 0% 1%;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
 }
 
-header h2, h3 {
-    margin: 0 5%;
-    color: white;
-    font-size: 20px;
+h2, h3 {
+    margin: 0 10%;
+    color: whitesmoke;
+    font-size: 15px;
     text-align: center;
     margin:0 20% 1%;
 }
 
 h2 b{
-    color: rgba(255, 0, 0, 0.734);
+    color: rgba(109, 36, 129, 0.734);
 }
-header h3 {
-    color: white;
-    font-size: 17px;
-    text-align: center;
+h3 {
+    font-size: 13px;
+    margin-top: 2%;
 }
 
 main {
@@ -38,14 +37,10 @@ main {
 
 button {
     font-size: 20px;
-    background-image: -webkit-linear-gradient(top, #D01E1E, #29333F);
+    background-image: -webkit-linear-gradient(top, rgba(109, 36, 129, 0.734), #29333F);
     border-radius: 20px;
     color: #FFFFFF;
-    padding: auto;
-    margin: auto;
     width: 7%;
-    box-shadow: 1px 1px 20px 0 #000000;
-    display: inline-block;
     cursor: pointer;
     text-align: center;
 }
@@ -58,17 +53,26 @@ button:hover {
 .personagens {
     display: flex;
     justify-content: center;
+    margin-top: 1%;
 }
 
-.personagens img {
-    margin: 2% 2%;
+#ariane, #anitta {
+    margin: 0% 2%;
     width: 300px;
-    height: 400px;
+    height: 300px;
+}
+
+#kylie {
+    margin: 0% 0%;
+    width: 300px;
+    height: 300px;
 }
 
 footer {
     text-align: center;
-    color: white;
+    color:whitesmoke;
+    font-size: 12px;
+    margin-bottom: 0%;
 }
 
 @media (max-width: 700px) {
